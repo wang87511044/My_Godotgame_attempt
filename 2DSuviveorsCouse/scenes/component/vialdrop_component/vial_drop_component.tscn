@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://wqf4rbntulla"]
+
+[ext_resource type="Script" path="res://scenes/component/vialdrop_component/vial_drop_component.gd" id="1_g3htn"]
+
+[node name="VialDropComponent" type="Node"]
+script = ExtResource("1_g3htn")

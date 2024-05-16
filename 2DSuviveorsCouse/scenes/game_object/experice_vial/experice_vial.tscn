@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbwvnroc07s4a"]
+
+[ext_resource type="Texture2D" uid="uid://dg1rkfxvvu0dt" path="res://scenes/game_object/experice_vial/经验球.png" id="1_ljgcu"]
+[ext_resource type="Script" path="res://scenes/game_object/experice_vial/experice_vial.gd" id="1_y6wby"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fo0dh"]
+radius = 8.0
+
+[node name="ExpericeVial" type="Node2D"]
+position = Vector2(-6, 0)
+script = ExtResource("1_y6wby")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(6, 0)
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_fo0dh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ljgcu")
